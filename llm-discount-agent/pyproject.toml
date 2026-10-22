@@ -1,0 +1,22 @@
+[project]
+name = "discount-agent"
+version = "0.1.0"
+description = "LLM based AI-Powered Discount Agent"
+readme = "README.md"
+authors = [
+    { name = "nd-nyah", email = "" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "langchain>=1.4.7",
+    "langchain-ollama>=1.1.0",
+    "langsmith>=0.14.12",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+discount-agent = "discount_agent:agent_pipeline"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
