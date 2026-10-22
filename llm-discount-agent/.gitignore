@@ -1,4 +1,18 @@
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Virtual environment
 .venv/
+
+# Python cache files
 __pycache__/
 *.py[cod]
+
+# Testing and linting
+.pytest_cache/
+.ruff_cache/
+
+# Generated evaluation results
+agent_comparison.csv
